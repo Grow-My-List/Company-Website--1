@@ -1,0 +1,16 @@
+{
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/about/page": "/about",
+  "/api/contacts/route": "/api/contacts",
+  "/api/job-application/route": "/api/job-application",
+  "/api/newsletter/route": "/api/newsletter",
+  "/api/service-inquiry/route": "/api/service-inquiry",
+  "/careers/page": "/careers",
+  "/contact/page": "/contact",
+  "/page": "/",
+  "/projects/page": "/projects",
+  "/services/page": "/services",
+  "/team/page": "/team",
+  "/test-all/page": "/test-all"
+}
