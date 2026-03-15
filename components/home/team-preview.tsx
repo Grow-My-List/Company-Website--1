@@ -16,7 +16,7 @@ const teamMembers = [
     email: "aswin453ka@gmail.com",
   },
   {
-    name: "Siranjeevi ",
+    name: "Siranjeevi B.U ",
     role: "Head- Digital marketing (SEO,SMO) & HR Executive ",
     image: "/team/michael.jpg",
     bio: "Leading brand growth through expert SEO, SMO strategies, and organizational excellence in talent and HR management.",
@@ -25,7 +25,7 @@ const teamMembers = [
     email: "michael@quantixlab.com",
   },
   {
-    name: "Pradeep",
+    name: "Pradeep Kumar M",
     role: "legal & compliance officer",
     image: "/team/emily.jpg",
     bio: "Ensuring regulatory compliance, managing legal risks, protecting company integrity and ethical standards.",
@@ -34,16 +34,16 @@ const teamMembers = [
     email: "emily@quantixlab.com",
   },
   {
-    name: "Surgunan",
+    name: "Sargunan J.S",
     role: " Cheif Operation Officer",
     image: "/team/david.jpg",
     bio: "Strategic operations leader driving efficiency, growth, performance, and scalable business transformation globally.",
     linkedin: "https://www.linkedin.com/in/sargunan-j-s-28915b2a9/",
     github: "https://github.com/Sargunan-js",
-    email: "david@quantixlab.com",
+    email: "ssunsargunan@gmail.com",
   },
    {
-    name: "Hari Haran",
+    name: "Hari Haran T.G",
     role: "Full Stack Developer",
     image: "/team/david.jpg",
     bio: "Creating intuitive user experiences",

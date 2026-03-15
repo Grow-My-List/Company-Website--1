@@ -26,7 +26,7 @@ const navigation = {
 const social = [
   { name: "LinkedIn", href: "https://linkedin.com/company/quantixlab", icon: Linkedin },
   { name: "GitHub", href: "https://github.com/quantixlab", icon: Github },
-  { name: "Email", href: "mailto:info@quantixlab.com", icon: Mail },
+  { name: "Email", href: "mailto:quantixlabs123@gmail.com", icon: Mail },
 ]
 
 export function Footer() {
@@ -124,7 +124,7 @@ export function Footer() {
                 <li className="flex items-center gap-3">
                   <Mail className="h-5 w-5 text-[#00AEEF] shrink-0" />
                   <a href="mailto:info@quantixlab.com" className="text-sm text-zinc-400 hover:text-[#00AEEF]">
-                    info@quantixlab.com
+                    infoquantixlab@gmail.com
                   </a>
                 </li>
               </ul>

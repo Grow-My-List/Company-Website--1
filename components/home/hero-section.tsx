@@ -188,7 +188,7 @@ export function HeroSection() {
               <CompanyMetric value={7} suffix="+" label="Industrial Core Sectors" icon={Building2} />
               <CompanyMetric value={99} suffix=".9%" label="System Reliability" icon={Users} />
               <CompanyMetric value={11} suffix="+" label="Projects Deliverd" icon={CheckCircle} />
-              <CompanyMetric value={24} suffix="/7" label="Active Response" icon={Zap} />
+              <CompanyMetric value={25} suffix="/7" label="Active Response" icon={Zap} />
             </div>
           </div>
         </div>
