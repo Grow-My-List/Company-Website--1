@@ -169,7 +169,7 @@ export function Header() {
               <LinkedInIcon className="h-6 w-6" />
               <span>LinkedIn</span>
             </a>
-            <a href="https://instagram.com" className="flex items-center gap-2 text-sm font-medium">
+            <a href="https://www.instagram.com/quantixlabs03/?__coig_challenged=1" className="flex items-center gap-2 text-sm font-medium">
               <InstagramIcon className="h-6 w-6" />
               <span>Instagram</span>
             </a>

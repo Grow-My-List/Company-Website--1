@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect, useRef, useMemo } from "react"
 import Link from "next/link"
-import { Award, Users, Globe, ArrowRight, CheckCircle2, Sparkles, Rocket, Shield, Zap } from "lucide-react"
+import { Award, Users, Globe, ArrowRight, CheckCircle2, Sparkles, Rocket, ShieldCheckIcon, Zap, Briefcase } from "lucide-react"
 
 /** * INTERNALS: Custom Hooks (Injected for Single-File Portability)
  * In a production app, these would remain in @/hooks 
@@ -102,17 +102,17 @@ export function AboutPreview() {
   const { ref: titleRef, isVisible: titleVisible } = useScrollAnimation()
 
   const highlights = [
-    { icon: Award, value: "12+", label: "Experience", description: "A decade of mastering modern architectures." },
-    { icon: Users, value: "250+", label: "Partners", description: "Scale-ups and Fortune 500s trust our code." },
-    { icon: Globe, value: "45+", label: "Countries", description: "Global footprint with localized expertise." },
-    { icon: Shield, value: "99.9%", label: "Uptime", description: "Reliability is the core of our digital DNA." },
+  { icon: Briefcase, value: "5+", label: "Projects Delivered", description: "Innovative digital solutions successfully deployed." },
+  { icon: Users, value: "8+", label: "Clients", description: "Businesses worldwide rely on our expertise." },
+  { icon: Globe, value: "30+", label: "Industries Served", description: "Technology solutions across diverse sectors." }, 
+  { icon: ShieldCheckIcon, value: "99%", label: "System Reliability", description: "Stable infrastructure powering every service." }
   ]
 
   const features = [
     "Next-Gen AI Integration",
     "Cloud-Native Architecture",
     "Zero-Trust Security",
-    "User-Centric UX Design",
+    "Reliability Service",
     "High-Velocity DevOps",
     "Post-Launch Maintenance"
   ]

@@ -3,7 +3,7 @@
 import React, { useEffect, useState, useMemo } from "react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { ArrowRight, ShieldCheck, Globe, Zap, Users, Building2 } from "lucide-react"
+import { ArrowRight, ShieldCheck, Globe, Zap, Users, Building2,Folder,CheckCircle  } from "lucide-react"
 import { useScrollAnimation, useCountUp } from "@/hooks/use-scroll-animation"
 
 /**
@@ -185,9 +185,9 @@ export function HeroSection() {
             </div>
 
             <div className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 transition-all duration-1000 delay-800 ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
-              <CompanyMetric value={7} suffix="+" label="Core Sectors" icon={Building2} />
-              <CompanyMetric value={99} suffix=".9%" label="Reliability SLA" icon={Users} />
-              <CompanyMetric value={150} suffix="+" label="Neural Nodes" icon={Globe} />
+              <CompanyMetric value={7} suffix="+" label="Industrial Core Sectors" icon={Building2} />
+              <CompanyMetric value={99} suffix=".9%" label="System Reliability" icon={Users} />
+              <CompanyMetric value={11} suffix="+" label="Projects Deliverd" icon={CheckCircle} />
               <CompanyMetric value={24} suffix="/7" label="Active Response" icon={Zap} />
             </div>
           </div>
