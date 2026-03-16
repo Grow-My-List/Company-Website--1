@@ -9,6 +9,7 @@ export const metadata: Metadata = {
 }
 
 const projects = [
+    
   {
     id: "fintech-dashboard",
     title: "FinTech Analytics Dashboard",
@@ -60,6 +61,7 @@ const projects = [
     tags: ["React", "Python", "PostgreSQL", "Google Maps API", "Machine Learning"],
   },
   {
+    
     id: "education-platform",
     title: "Online Learning Platform",
     category: "Education",
@@ -102,10 +104,10 @@ export default function ProjectsPage() {
         <div className="mx-auto max-w-7xl px-4 lg:px-8">
           <div className="grid grid-cols-2 gap-8 lg:grid-cols-4">
             {[
-              { value: "200+", label: "Projects Completed" },
-              { value: "50+", label: "Happy Clients" },
-              { value: "15+", label: "Industries Served" },
-              { value: "98%", label: "Client Satisfaction" },
+              { value: "10+", label: "Projects Bulit" },
+              { value: "2+", label: "Start Up Partners" },
+              { value: "10+", label: "Developer Community" },
+              { value: "100%", label: "Commitment to Quality" },
             ].map((stat) => (
               <div key={stat.label} className="text-center">
                 <div className="text-3xl font-bold text-primary sm:text-4xl">{stat.value}</div>
@@ -197,7 +199,7 @@ export default function ProjectsPage() {
                 asChild
               >
                 <Link href="/contact">
-                  Start a Project
+                  Start a Product Innovation
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>

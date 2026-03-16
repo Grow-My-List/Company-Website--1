@@ -20,6 +20,10 @@ const navigation = {
     { name: "Case Studies", href: "/projects" },
     { name: "Contact", href: "/contact" },
   ],
+  legal: [
+    { name: "Privacy Policy", href: "/privacy" },
+    { name: "Terms of Service", href: "/terms" },
+  ],
 }
 
 const social = [
