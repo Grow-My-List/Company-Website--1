@@ -298,16 +298,7 @@ export default function TeamPage() {
               We&apos;re always looking for talented individuals who are passionate about technology 
               and innovation. Check out our open positions.
             </p>
-            <Button 
-              size="lg" 
-              className="mt-8 bg-primary-foreground text-primary hover:bg-primary-foreground/90" 
-              asChild
-            >
-              <Link href="/careers">
-                View Open Positions
-                <ArrowRight className="ml-2 h-4 w-4" />
-              </Link>
-            </Button>
+
           </div>
         </div>
       </section>

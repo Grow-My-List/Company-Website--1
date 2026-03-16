@@ -11,7 +11,6 @@ const navigation = [
   { name: "Services", href: "/services" },
   { name: "Team", href: "/team" },
   { name: "Projects", href: "/projects" },
-  { name: "Careers", href: "/careers" },
   { name: "Contact", href: "/contact" },
 ]
 
@@ -165,11 +164,11 @@ export function Header() {
 
           {/* Mobile Socials Footer */}
           <div className="mt-auto pt-6 border-t border-border/40 flex items-center justify-around">
-            <a href="https://linkedin.com" className="flex items-center gap-2 text-sm font-medium">
+            <a href="https://linkedin.com" target='_blank'rel='noopener noreferrer' className="flex items-center gap-2 text-sm font-medium hover:text-[#1FA2E1] transition-colors justify-around">
               <LinkedInIcon className="h-6 w-6" />
               <span>LinkedIn</span>
             </a>
-            <a href="https://www.instagram.com/quantixlabs03/?__coig_challenged=1" className="flex items-center gap-2 text-sm font-medium">
+            <a href="https://www.instagram.com/quantixlabs03/?__coig_challenged=1" target='_blank' rel='noopener noreferrer' className="flex items-center gap-2 text-sm font-medium hover:text-[#1FA2E1] transition-colors justify-center gap-10">
               <InstagramIcon className="h-6 w-6" />
               <span>Instagram</span>
             </a>

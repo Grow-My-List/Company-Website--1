@@ -6,7 +6,6 @@ const navigation = {
   company: [
     { name: "About Us", href: "/about" },
     { name: "Our Team", href: "/team" },
-    { name: "Careers", href: "/careers" },
   ],
   services: [
     { name: "Software Development", href: "/services#software" },
