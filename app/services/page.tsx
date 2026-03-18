@@ -2,7 +2,7 @@ import { Metadata } from "next"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { 
-  Code2, 
+  FileCode2, 
   Globe, 
   Smartphone, 
   Cloud, 
@@ -30,12 +30,13 @@ export const metadata: Metadata = {
 const services = [
   {
     id: "software",
-    icon: Code2,
+    icon: FileCode2,
     title: "Custom Software Development",
-    description: "We build tailored software solutions that address your unique business challenges. Our team delivers robust, scalable applications designed to streamline operations and drive growth.",
+    /*img src="/services/software-development.jpg" alt="Custom Software Development"*/
+    description: "We build tailored software solutions that address your unique business challenges. Our team delivers robust, scalable applications designed to streamline operations and drive growth with your specific needs in mind.",
     features: [
-      "Enterprise application development",
-      "Legacy system modernization",
+      "Enterprise Application development",
+      "Modern System architecture design",
       "API development and integration",
       "Database design and optimization",
     ],
@@ -79,7 +80,7 @@ const services = [
   {
     id: "ai",
     icon: Bot,
-    title: "AI & Automation",
+    title: "Web -Hosting",
     description: "Intelligent automation solutions powered by machine learning and artificial intelligence. Transform your business processes with smart, data-driven systems.",
     features: [
       "Machine learning model development",
@@ -103,7 +104,7 @@ const services = [
   {
     id: "data",
     icon: Database,
-    title: "Data Engineering & Analytics",
+    title: "Digital-Marketing",
     description: "Unlock the value of your data with our comprehensive data engineering and analytics services. We build data pipelines and analytics solutions that drive insights.",
     features: [
       "Data warehouse design",
@@ -112,6 +113,7 @@ const services = [
       "Big data solutions",
     ],
   },
+  /*
   {
     id: "security",
     icon: Shield,
@@ -124,6 +126,7 @@ const services = [
       "Compliance management",
     ],
   },
+  */
   {
     id: "product",
     icon: Cpu,
@@ -136,6 +139,7 @@ const services = [
       "Technical due diligence",
     ],
   },
+  /*
   {
     id: "ux",
     icon: LayoutGrid,
@@ -148,6 +152,7 @@ const services = [
       "Design system development",
     ],
   },
+  */
 ]
 
 const process = [
@@ -266,7 +271,7 @@ export default function ServicesPage() {
               How We Work
             </h2>
             <p className="mt-4 text-lg text-muted-foreground">
-              Our proven methodology ensures successful delivery of every project.
+              Our proven methodology ensures successful delivery of each and every project.
             </p>
           </div>
 
@@ -300,7 +305,7 @@ export default function ServicesPage() {
               Ready to Start Your Project?
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-lg text-primary-foreground/80">
-              Let&apos;s discuss how we can help you achieve your technology goals.
+              Let&apos;s discuss how we can help you achieve your Product goals.
             </p>
             <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
               <Button 

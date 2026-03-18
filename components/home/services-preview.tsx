@@ -44,7 +44,7 @@ const services = [
   },
   {
     icon: Bot,
-    title: "AI & Automation",
+    title: "Web-Hosting",
     description: "Intelligent automation solutions powered by machine learning and AI.",
     href: "/services#ai",
     gradient: "from-orange-500/20 to-amber-500/20",

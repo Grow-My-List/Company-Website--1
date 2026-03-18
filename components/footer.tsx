@@ -41,21 +41,14 @@ export function Footer() {
             
             {/* Brand Section */}
             <div className="lg:col-span-1">
-              <Link href="/" className="flex items-center gap-3">
-                <svg 
-                  width="40" 
-                  height="40" 
-                  viewBox="0 0 100 100" 
-                  fill="none" 
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="shrink-0"
-                >
-                  <path d="M50 15L75 28L50 41L25 28L50 15Z" fill="#333333" stroke="white" strokeWidth="2"/>
-                  <path d="M25 35L50 48L75 35V45L50 58L25 45V35Z" fill="#00AEEF"/>
-                  <path d="M25 52L50 65L75 52V62L50 75L25 62V52Z" fill="#00AEEF"/>
-                </svg>
+              <Link href="/" className="flex items-center gap-3 group">
+                <img 
+                  src="/Quantix Labs.svg" 
+                  alt="Quantix Labs Logo" 
+                  className="shrink-0 h-10 w-10 transition-transform group-hover:scale-110"
+                />
                 
-                <span className="text-2xl font-semibold tracking-tight">
+                <span className="text-xl sm:text-2xl font-semibold tracking-tight">
                   Quantix<span className="font-light">Labs</span>
                 </span>
               </Link>

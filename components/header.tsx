@@ -93,13 +93,17 @@ export function Header() {
         </div>
 
         <div className="flex lg:flex-1">
-          <Link href="/" className="-m-1.5 p-1.5 flex items-center gap-3 group">
-            <img src="/Quantix Labs.svg" alt="Quantix Labs Logo" className="h-10 w-10 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-3" />
-            <div className="flex flex-col">
-              <span className="text-xl font-medium tracking-tight text-foreground">
+          <Link href="/" className="-m-1.5 p-1.5 flex items-center gap-2 sm:gap-3 group">
+            <img 
+              src="/Quantix Labs.svg" 
+              alt="Quantix Labs Logo" 
+              className="h-8 w-8 sm:h-10 sm:w-10 shrink-0 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-3" 
+            />
+            <div className="flex flex-col min-w-0">
+              <span className="text-lg sm:text-xl font-medium tracking-tight text-foreground whitespace-nowrap">
                 Quantix<span className="font-bold">Labs</span>
               </span>
-              <span className="text-[7px] font-extrabold uppercase tracking-[0.2em] text-muted-foreground/80">
+              <span className="text-[6px] sm:text-[7px] font-extrabold uppercase tracking-[0.2em] text-muted-foreground/80 whitespace-nowrap">
                 Turning Ideas into Intelligent Solutions
               </span>
             </div>
