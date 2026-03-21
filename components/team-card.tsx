@@ -1,5 +1,6 @@
 "use client"
 
+import { useEffect, useState } from "react"
 import { Linkedin, Github, Mail } from "lucide-react"
 import { useTilt } from "@/hooks/use-scroll-animation"
 
@@ -27,6 +28,7 @@ export function TeamCard({
   index = 0,
 }: TeamCardProps) {
   const initials = name.split(' ').map(n => n[0]).join('')
+  const avatarSrc = image?.trim() ? image.trim() : "/placeholder-user.jpg"
   const { ref: tiltRef, transform } = useTilt(8)
 
   if (variant === "management") {
@@ -47,9 +49,15 @@ export function TeamCard({
           <div className="relative">
             <div className="absolute inset-0 bg-gradient-to-br from-primary to-accent rounded-full animate-spin-slow opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-sm scale-110" />
             <div className="relative h-32 w-32 overflow-hidden rounded-full bg-gradient-to-br from-primary/30 to-accent/30 flex items-center justify-center ring-4 ring-border group-hover:ring-primary/50 transition-all duration-500 group-hover:scale-105">
-              <span className="text-4xl font-bold text-primary transition-transform duration-500 group-hover:scale-110">
-                {initials}
-              </span>
+                <img
+                  src={avatarSrc}
+                  alt={`${name} profile`}
+                  className="h-full w-full object-cover"
+                  onError={(event) => {
+                    const img = event.currentTarget as HTMLImageElement
+                    img.src = "/placeholder-user.jpg"
+                  }}
+                />
             </div>
             {/* Floating particles */}
             <div className="absolute -top-2 -right-2 w-4 h-4 rounded-full bg-primary/50 opacity-0 group-hover:opacity-100 animate-float transition-opacity duration-500" />
@@ -117,9 +125,15 @@ export function TeamCard({
           {/* Ripple effect on hover */}
           <div className="absolute inset-0 rounded-full animate-ripple opacity-0 group-hover:opacity-100 border-2 border-primary/30" />
           <div className="h-24 w-24 overflow-hidden rounded-full bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center ring-2 ring-border group-hover:ring-primary/40 transition-all duration-500 group-hover:scale-105">
-            <span className="text-2xl font-bold text-primary transition-transform duration-500 group-hover:scale-110">
-              {initials}
-            </span>
+            <img
+              src={avatarSrc}
+              alt={`${name} profile`}
+              className="h-full w-full object-cover"
+              onError={(event) => {
+                const img = event.currentTarget as HTMLImageElement
+                img.src = "/placeholder-user.jpg"
+              }}
+            />
           </div>
         </div>
         

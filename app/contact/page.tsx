@@ -53,14 +53,46 @@ export default function ContactPage() {
   const [submitted, setSubmitted] = useState(false)
   const [loading, setLoading] = useState(false)
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault()
-    setLoading(true)
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1000))
-    setLoading(false)
-    setSubmitted(true)
+ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  e.preventDefault();
+  setLoading(true);
+
+  const formData = new FormData(e.currentTarget);
+
+  const data = {
+    name: `${formData.get('firstName') || ''} ${formData.get('lastName') || ''}`,
+    email: formData.get('email')?.toString(),
+    company: formData.get('company')?.toString() || null,
+    subject: formData.get('subject')?.toString(),
+    message: formData.get('message')?.toString(),
+  };
+
+  try {
+    const response = await fetch('/api/contacts', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data),
+    });
+
+    const result = await response.json(); // ✅ IMPORTANT
+
+    if (!response.ok) {
+      console.error('Error from server:', result);
+      throw new Error(result.error || 'Failed to send message');
+    }
+
+    console.log('Success:', result);
+    setSubmitted(true);
+
+  } catch (error) {
+    console.error('Error submitting form:', error);
+    alert('Failed to send message. Please try again.');
+  } finally {
+    setLoading(false);
   }
+};
 
   return (
     <div className="flex flex-col">
@@ -117,7 +149,7 @@ export default function ContactPage() {
                       <Input
                         id="firstName"
                         name="firstName"
-                        placeholder="John"
+                        placeholder="first name"
                         required
                       />
                     </div>
@@ -126,7 +158,7 @@ export default function ContactPage() {
                       <Input
                         id="lastName"
                         name="lastName"
-                        placeholder="Doe"
+                        placeholder="Last name"
                         required
                       />
                     </div>
@@ -138,7 +170,7 @@ export default function ContactPage() {
                       id="email"
                       name="email"
                       type="email"
-                      placeholder="john@example.com"
+                      placeholder="yourgmail@gmail.com"
                       required
                     />
                   </div>

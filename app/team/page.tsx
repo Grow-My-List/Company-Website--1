@@ -2,7 +2,7 @@ import { Metadata } from "next"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { TeamCard } from "@/components/team-card"
-import { ArrowRight, Linkedin, Github, Mail } from "lucide-react"
+import { ArrowRight, Linkedin, Github, Mail, MessageCircle } from "lucide-react"
 
 export const metadata: Metadata = {
   title: "Our Team - Quantix Lab",
@@ -13,47 +13,47 @@ const managementTeam = [
   {
     name: "Aswin K A",
     role: "Management Head & HR Manager",
-    image: "/team/sarah.jpg",
+    image:"/Aswin img.jpeg",
     bio: "Founder managing HR, administration, finance, and operations with strategic leadership and precision",
     linkedin: "https:www.linkedin.com/in/aswin-k-a-77581a249",
     github: "https://github.com/Aswin4532003",
     email: "aswin453ka@gmail.com",
   },
   {
-    name: "Siranjeevi ",
+    name: "Siranjeevi B U ",
     role: "Head- Digital marketing (SEO,SMO) & HR Executive ",
-    image: "/team/michael.jpg",
+    image: "/Siranji pic.png",
     bio: "Leading brand growth through expert SEO, SMO strategies, and organizational excellence in talent and HR management.",
     linkedin: "https://www.linkedin.com/in/siranjeevi-bu/",
     github: "https://github.com/siranjj",
-    email: "michael@quantixlab.com",
+    email: "Siranjeevi.uthaman@gmail.com",
   },
   {
-    name: "Pradeep",
-    role: "legal & compliance officer",
-    image: "/team/emily.jpg",
+    name: "Pradeep Kumar M",
+    role: "legal & compliance officer & QA Manager",
+    image: "/placeholder-user.jpg",
     bio: "Ensuring regulatory compliance, managing legal risks, protecting company integrity and ethical standards.",
     linkedin: "https://linkedin.com/in/emilyrodriguez",
     github: "https://github.com/Selvipr",
-    email: "emily@quantixlab.com",
+    email: "pradeepselvi126@gmail.com",
   },
   {
-    name: "Surgunan",
-    role: " Cheif Operation Officer",
-    image: "/team/david.jpg",
+    name: "Sargunan J S",
+    role: "Cheif Operation Officer (COO) & Lead Software Engineer",
+    image: "/Sargunan_img-removebg-preview.png",
     bio: "Strategic operations leader driving efficiency, growth, performance, and scalable business transformation globally.",
     linkedin: "https://www.linkedin.com/in/sargunan-j-s-28915b2a9/",
     github: "https://github.com/Sargunan-js",
-    email: "david@quantixlab.com",
+    email: "ssunsargunan@gmail.com",
   },
    {
-    name: "Hari Haran",
+    name: "Hari Haran T G",
     role: "Full Stack Developer",
-    image: "/team/david.jpg",
+    image: "/HariHaran.jpeg",
     bio: "Creating intuitive user experiences",
     linkedin: "https://www.linkedin.com/in/hariharan-t-g-51013a284/",
     github: "https://github.com/21Hari",
-    email: "david@quantixlab.com",
+    email: "haribalaji@gmail.com",
   },
 ]
 
@@ -61,6 +61,7 @@ const engineeringTeam = [
   {
     name: "Hari Haran",
     role: "Senior Developer ",
+    image: "/HariHaran.jpeg",
     bio: "Full-stack expert with 1+ years building enterprise applications.",
     linkedin: "https://linkedin.com/in/emilyrodriguez",
     github: "https://github.com/emilyrodriguez",
@@ -69,6 +70,7 @@ const engineeringTeam = [
   {
     name: "Kirshna Kumar",
     role: "Frontend Developer",
+    image: "/placeholder-user.jpg",
     bio: "React specialist crafting beautiful, responsive user interfaces.",
     linkedin: "https://linkedin.com/in/jameschen",
     github: "https://github.com/jameschen",
@@ -77,6 +79,7 @@ const engineeringTeam = [
   {
     name: "Bharathi",
     role: "Backend Developer",
+    image: "/placeholder-user.jpg",
     bio: "Node.js and Python expert building scalable APIs and services.",
     linkedin: "https://linkedin.com/in/priyapatel",
     github: "https://github.com/priyapatel",
@@ -85,6 +88,7 @@ const engineeringTeam = [
   {
     name: "Tharmari Selvan",
     role: "Full Stack Developer",
+      image: "/placeholder-user.jpg",
     bio: "Versatile developer experienced in modern web technologies.",
     linkedin: "https://linkedin.com/in/alexthompson",
     github: "https://github.com/alexthompson",
@@ -93,6 +97,7 @@ const engineeringTeam = [
   {
     name: "Sarugunan",
     role: "DevOps Engineer",
+    image: "/placeholder-user.jpg",
     bio: "Cloud infrastructure specialist with AWS and Kubernetes expertise.",
     linkedin: "https://linkedin.com/in/mariagarcia",
     github: "https://github.com/mariagarcia",
@@ -101,6 +106,7 @@ const engineeringTeam = [
   {
     name: "Predeep",
     role: "QA Engineer",
+    image: "/placeholder-user.jpg",
     bio: "Quality assurance expert ensuring bug-free, reliable software.",
     linkedin: "https://linkedin.com/in/robertlee",
     github: "https://github.com/robertlee",
@@ -153,6 +159,7 @@ export default function TeamPage() {
                 key={member.name}
                 name={member.name}
                 role={member.role}
+                image={member.image}
                 bio={member.bio}
                 linkedin={member.linkedin}
                 github={member.github}
@@ -185,6 +192,7 @@ export default function TeamPage() {
                 key={member.name}
                 name={member.name}
                 role={member.role}
+                image={member.image}
                 bio={member.bio}
                 linkedin={member.linkedin}
                 github={member.github}
@@ -256,19 +264,17 @@ export default function TeamPage() {
                 </div>
                 <div className="flex items-center gap-4 rounded-lg border border-border bg-muted/30 p-4">
                   <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-primary/10">
-                    <svg className="h-6 w-6 text-primary" viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
-                    </svg>
+                    <MessageCircle className="h-6 w-6 text-primary" />
                   </div>
                   <div>
-                    <p className="text-sm text-muted-foreground">Twitter/X</p>
+                    <p className="text-sm text-muted-foreground">WhatsApp</p>
                     <a 
-                      href="https://x.com/quantixlab" 
+                      href="https://wa.me/1234567890" 
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="font-medium text-foreground hover:text-primary"
                     >
-                      @quantixlab
+                      81252575337
                     </a>
                   </div>
                 </div>
